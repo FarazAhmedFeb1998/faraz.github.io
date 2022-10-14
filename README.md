@@ -12,3 +12,6 @@ Iam Faraz Ahmed an Android and IOS developer, Who loves to make code simple by c
 
 #Github
 - [https://github.com/FarazAhmedFeb1998](https://github.com/FarazAhmedFeb1998)
+
+#LinkedIn
+- [https://www.linkedin.com/in/FaraazAhmed](https://www.linkedin.com/in/faraaz-ahmed-0a3a3816b)
