@@ -20,7 +20,6 @@ dark_header: false           # keep the header dark
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {icon: WhatsApp Image 2021-06-24 at 7.01.19 PM.jpeg}
   - {file: "index.html", icon: home}
   - {file: "README.md", icon: address-card}
 
