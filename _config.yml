@@ -1,24 +1,97 @@
-title: "Android Blogs"
-author: "Faraz Ahmed"
-description: "Faraz Ahmed"
-permalink: /:title/
-lang: "en"
-excerpt_separator: "\n\n\n"
-date_format: "%B %d, %Y"
 
-# Layout
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 
-show_excerpts: false        # show article excerpts on the home page
-show_frame: true           # adds a gray frame to the site
-show_sidebar: true        # show a sidebar instead of the usual header
-minimal: false             # use a dark header
+title: Shabaz Blog
+tagline: Shabaz's Personal Blog| Here I write about things I learn, the work I do and any hackathon projects.
+email: shabaz1729@gmail.com
+name: "Shabaz Ahmed"
+description: >- # this means to ignore newlines until "baseurl:"
+  Here I write about things I learn, the work I do and any hackathon projects.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://build3r.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+lang: en
+locale: en_US
+twitter:
+  username: shabazahmed_
+  card: summary
+twitter_username: shabazahmed_
+github_username:  build3r
+repository: "faraz.github.io"
+words_per_minute: 200
+# Build settings
+remote_theme: "mmistakes/minimal-mistakes@4.24.0" 
+minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "default", "dirt", "neon", "mint", "plum" "sunrise"
+plugins:
+  - jekyll-include-cache
+  - jekyll-sitemap
+  - jekyll-feed
+#minal mistake's overrides
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      author_profile: true
+      show_date: true
+      read_time: true
+      share: true
+search: true
 
-# Menu
+# SEO Related //TODO
+google_site_verification : "urddya_s4q20u_hav6nHd1i65jruWH_i1b_a-thMEV4"
+bing_site_verification   :
+yandex_site_verification :
 
-navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
-  - {file: "README.md"}
+#analytics
 
+kramdown:
+  hard_wrap: true
+
+# Site Author
+author:
+  name             : "Shabaz Ahmed"
+  avatar           : "WhatsApp Image 2021-06-24 at 7.01.19 PM.jpeg"
+  bio              : "Daily learner, serial hacker, Dreamer!"
+  location         : "Bengaluru"
+  email            : "mailto:shabaz1729@gmail.com"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:shabaz1729@gmail.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/shabazahmed"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/build3r"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/shabazahmed_"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://build3r.github.io"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   # url: "https://instagram.com/"
 footer:
   name             : "Shabaz Ahmed"
   avatar           : "WhatsApp Image 2021-06-24 at 7.01.19 PM.jpeg"
@@ -41,15 +114,14 @@ footer:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://build3r.github.io"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   # url: "https://instagram.com/"
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
 
-external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:farazahmedfeb@gmail.com"}
-  - {title: Github, icon: github, url: "https://github.com/FarazAhmedFeb1998"}
-  - {title: Github, icon: linkedin, url: "https://www.linkedin.com/in/faraaz-ahmed-0a3a3816b"}
-
-comments:
-#  disqus_shortname: ""    # see https://disqus.com/
-#  isso_domain: ""         # see https://posativ.org/isso/
-
-plugins:
- - jekyll-feed
