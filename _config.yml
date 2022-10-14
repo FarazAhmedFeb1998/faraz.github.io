@@ -18,7 +18,7 @@ minimal: false             # use a dark header
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {icon: home, file: "index.html"}
   - {icon: about, file: "README.md"}
-  - {avatar: "WhatsApp Image 2021-06-24 at 7.01.19 PM.jpeg"
+  - {avatar: "WhatsApp Image 2021-06-24 at 7.01.19 PM.jpeg"}
 
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
